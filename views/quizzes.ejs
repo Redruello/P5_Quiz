@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <h1>Quizzes:</h1>
+
+    <table>
+        <% for (var i in quizzes) { %>
+            <% var quiz = quizzes[i]; %>
+            <tr>
+                <td>
+                    <%= quiz.question %> : <%= quiz.answer %>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+
+    
+  </body>
+</html>
